@@ -13,4 +13,5 @@ end
 local Reception = getGitSoundId("https://github.com/Teilsthebfdifan/terrormodeshi/blob/main/terror mode reception music lol.mp3?raw=true", "terrorReception)
 Reception = game.SoundService
 Reception = true
+Reception.Volume = 5
 Reception:Play()
