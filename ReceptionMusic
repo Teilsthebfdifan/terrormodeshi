@@ -1,0 +1,16 @@
+local function getGitSoundId(GithubSoundPath: string, AssetName: string): Sound
+    local Url = GithubSoundPath
+
+    if not isfile(AssetName..".mp3") then 
+        writefile(AssetName..".mp3", game:HttpGet(Url)) 
+    end
+
+    local Sound = Instance.new("Sound")
+    Sound.SoundId = getcustomasset(AssetName..".mp3", true)
+    return Sound 
+end
+
+local Reception = getGitSoundId("https://github.com/Teilsthebfdifan/terrormodeshi/blob/main/terror mode reception music lol.mp3?raw=true", "terrorReception)
+Reception = game.SoundService
+Reception = true
+Reception:Play()
